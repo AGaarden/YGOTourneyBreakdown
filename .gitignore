@@ -208,5 +208,5 @@ __marimo__/
 
 # Program specific
 Lists/*.txt
-List_of_cards.csv
+List_of_cards*.csv
 Scraper_Saves/*.txt
