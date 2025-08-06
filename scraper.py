@@ -74,7 +74,7 @@ def ScrapeDeck(url):
                     break # If the text is done being looped through, find returns -1
                 card = raw[startIndex+15:raw.find("\"", startIndex+15)]
                 
-                if card.find("amp;") is not -1:
+                if card.find("amp;") != -1:
                     card = card[:card.find("amp;")] + card[card.find("amp;")+4:]
 
                 # If card is already in dictionary, +1 instead
