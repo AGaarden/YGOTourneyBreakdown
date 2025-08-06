@@ -11,8 +11,6 @@ class Tournament:
     deckCount: int
 
 _tourneyURL = "https://ygoprodeck.com/tournament/north-america-wcq-2025-3208" # Hardcoded tournament for now
-_tourneyData = "Scraper_Saves/Tourney_Data.txt" # Hardcoded file location for testing
-_deckData = "Scraper_Saves/Deck_Data.txt" # Hardcoded file location for testing
 
 # ScrapeTourneySite
 # Input: URL to scrape
@@ -122,15 +120,3 @@ def ScrapeTournament(tourneyURL):
                     end[card] = deck[card]
     
     return tourney
-    
-
-
-def main():
-    print("Test")
-    tourney = ScrapeTournament(_tourneyURL)
-
-    print(tourney.sideDeck)
-    print(tourney.deckCount)
-
-if __name__ == "__main__":
-    main()
